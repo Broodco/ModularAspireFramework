@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Common\ModularAspire.Common.Infrastructure\ModularAspire.Common.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\..\Common\ModularAspire.Common.Presentation\ModularAspire.Common.Presentation.csproj" />
+      <ProjectReference Include="..\ModularAspire.Modules.Identity.Application\ModularAspire.Modules.Identity.Application.csproj" />
+      <ProjectReference Include="..\ModularAspire.Modules.Identity.Domain\ModularAspire.Modules.Identity.Domain.csproj" />
+      <ProjectReference Include="..\ModularAspire.Modules.Identity.Presentation\ModularAspire.Modules.Identity.Presentation.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Database\Migrations\" />
+    </ItemGroup>
+
+</Project>

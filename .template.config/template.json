@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Maxime Broodcoorens",
+  "classifications": ["Web", "Aspire", "Modular", "Clean Architecture"],
+  "identity": "ModularAspire.Template",
+  "name": "Modular Monolith with .NET Aspire",
+  "shortName": "modaspire",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "ModularAspire",
+  "preferNameDirectory": true,
+  "symbols": {
+    "company": {
+      "type": "parameter",
+      "replaces": "YourCompany",
+      "defaultValue": "YourCompany"
+    }
+  }
+}

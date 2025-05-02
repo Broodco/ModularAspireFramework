@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit.Abstractions" Version="8.4.0" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ModularAspire.Common.Application\ModularAspire.Common.Application.csproj" />
+      <ProjectReference Include="..\ModularAspire.Common.Domain\ModularAspire.Common.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
