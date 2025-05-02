@@ -10,12 +10,6 @@
     "type": "project"
   },
   "sourceName": "ModularAspire",
-  "preferNameDirectory": true,
-  "symbols": {
-    "company": {
-      "type": "parameter",
-      "replaces": "YourCompany",
-      "defaultValue": "YourCompany"
-    }
+  "preferNameDirectory": true
   }
 }

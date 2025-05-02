@@ -5,10 +5,10 @@
     <!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
     <PackageId>ModularAspireFramework</PackageId>
     <PackageVersion>1.0</PackageVersion>
-    <Title>TODO: fill the package name here</Title>
-    <Authors>TODO: fill the author name or organization here</Authors>
-    <Description>TODO: fill the package description here</Description>
-    <PackageTags>TODO: fill the tags here</PackageTags>
+    <Title>Modular Aspire Framework</Title>
+    <Authors>Maxime Broodcoorens</Authors>
+    <Description>Template pour créer une application modulaire avec .NET Aspire</Description>
+    <PackageTags>dotnet-new;templates;aspire;modular</PackageTags>
     <PackageProjectUrl>TODO: include a link to an associated project, repository, or company website</PackageProjectUrl>
 
     <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
