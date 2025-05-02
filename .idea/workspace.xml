@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a51d146-7b36-4fc2-b91f-0625a2f88858" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CREDITS.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.template.config/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/.template.config/template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModularAspireFramework.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ModularAspireFramework.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/.template.config/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/.template.config/template.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <workItem from="1746178493367" duration="2006000" />
       <workItem from="1746190557604" duration="998000" />
       <workItem from="1746191566370" duration="23000" />
-      <workItem from="1746191601300" duration="1023000" />
+      <workItem from="1746191601300" duration="1656000" />
     </task>
     <task id="LOCAL-00001" summary="Created Modular Monolith application template with Aspire integration and an Identity Module for auth.">
       <option name="closed" value="true" />
@@ -88,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746191632358</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update project metadata and add .gitignore&#10;&#10;Updated project metadata in the csproj file to include proper details such as title, author, description, and tags. Added a .gitignore file to exclude unnecessary files and folders. Simplified the template.json file by removing unused symbols configuration.">
+      <option name="closed" value="true" />
+      <created>1746192649731</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746192649731</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +119,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Created Modular Monolith application template with Aspire integration and an Identity Module for auth." />
     <MESSAGE value="Init project template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init project template" />
+    <MESSAGE value="Update project metadata and add .gitignore&#10;&#10;Updated project metadata in the csproj file to include proper details such as title, author, description, and tags. Added a .gitignore file to exclude unnecessary files and folders. Simplified the template.json file by removing unused symbols configuration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project metadata and add .gitignore&#10;&#10;Updated project metadata in the csproj file to include proper details such as title, author, description, and tags. Added a .gitignore file to exclude unnecessary files and folders. Simplified the template.json file by removing unused symbols configuration." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
