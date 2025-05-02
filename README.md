@@ -67,6 +67,7 @@ YourCompany.YourProduct/
 │   │   │   ├── YourCompany.YourProduct.Identity.Application/
 │   │   │   ├── YourCompany.YourProduct.Identity.Domain/
 │   │   │   ├── YourCompany.YourProduct.Identity.Infrastructure/
+│   │   │   ├── YourCompany.YourProduct.Identity.IntegrationEvents/
 │   │   │   └── YourCompany.YourProduct.Identity.Presentation/
 │   ├── YourCompany.YourProduct.MigrationService/
 │   ├── YourCompany.YourProduct.AppHost/
