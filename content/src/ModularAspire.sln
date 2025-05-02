@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Ident
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.Presentation", "Modules\Identity\ModularAspire.Modules.Identity.Presentation\ModularAspire.Modules.Identity.Presentation.csproj", "{CECE36BB-C34C-43AF-BE39-42B86A423A3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.IntegrationEvents", "Modules\Identity\ModularAspire.Modules.Identity.IntegrationEvents\ModularAspire.Modules.Identity.IntegrationEvents.csproj", "{3E70233A-7F87-4E27-A2B1-3881DBD5B357}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,10 @@ Global
 		{CECE36BB-C34C-43AF-BE39-42B86A423A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CECE36BB-C34C-43AF-BE39-42B86A423A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CECE36BB-C34C-43AF-BE39-42B86A423A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E70233A-7F87-4E27-A2B1-3881DBD5B357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E70233A-7F87-4E27-A2B1-3881DBD5B357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E70233A-7F87-4E27-A2B1-3881DBD5B357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E70233A-7F87-4E27-A2B1-3881DBD5B357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4F6245C4-FE8E-4B77-B015-56223F4DFD59} = {A2F567D4-D595-4A10-B861-ACAF725112D7}
@@ -101,5 +107,6 @@ Global
 		{15DE3EE9-4CFE-487E-8675-630F264472BE} = {324C7A40-AD11-476C-9EEA-C7F152886615}
 		{25A086D1-EA6E-4B2D-B4D2-CEA9E60C710F} = {324C7A40-AD11-476C-9EEA-C7F152886615}
 		{CECE36BB-C34C-43AF-BE39-42B86A423A3C} = {324C7A40-AD11-476C-9EEA-C7F152886615}
+		{3E70233A-7F87-4E27-A2B1-3881DBD5B357} = {324C7A40-AD11-476C-9EEA-C7F152886615}
 	EndGlobalSection
 EndGlobal

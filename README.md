@@ -64,6 +64,11 @@ YourCompany.YourProduct/
 │   │   └── YourCompany.YourProduct.Common.Presentation/
 │   ├── Modules/
 │   │   ├── Identity/
+│   │   │   ├── YourCompany.YourProduct.Identity.Application/
+│   │   │   ├── YourCompany.YourProduct.Identity.Domain/
+│   │   │   ├── YourCompany.YourProduct.Identity.Infrastructure/
+│   │   │   └── YourCompany.YourProduct.Identity.Presentation/
+
 │   ├── YourCompany.YourProduct.MigrationService/
 │   ├── YourCompany.YourProduct.AppHost/
 │   └── YourCompany.YourProduct.ServiceDefaults/
