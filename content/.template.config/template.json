@@ -17,5 +17,21 @@
       "replaces": "YourCompany",
       "defaultValue": "YourCompany"
     }
-  }
+  },
+  "postActions": [
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "description": "Rename script template to PowerShell script",
+      "manualInstructions": [
+        {
+          "text": "Rename src/scripts/new-module.ps1.template to src/scripts/new-module.ps1"
+        }
+      ],
+      "args": {
+        "executable": "powershell",
+        "args": "-Command \"Rename-Item -Path 'src/scripts/new-module.ps1.template' -NewName 'new-module.ps1'\""
+      },
+      "continueOnError": true
+    }
+  ]
 }

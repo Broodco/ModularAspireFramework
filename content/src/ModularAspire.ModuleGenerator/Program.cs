@@ -38,7 +38,7 @@ namespace ModularAspire.ModuleGenerator
                 return;
             }
             
-            string templatePath = Path.Combine(rootDir, "tools", "ModuleTemplate");
+            string templatePath = Path.Combine(rootDir, "src", "Templates", "ModuleTemplate");
             string modulesPath = Path.Combine(rootDir, "src", "Modules");
             string newModulePath = Path.Combine(modulesPath, moduleName);
             

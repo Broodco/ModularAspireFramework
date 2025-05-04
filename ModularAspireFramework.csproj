@@ -31,10 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
+    <Content Include="**\*" Exclude="**\bin\**;**\obj\**;**\.vs\**;**\.git\**;**\*.user;**\.template.config\**;**\ModularAspireFramework.csproj;tools\**;**\*.ps1" />
     <Compile Remove="**\*" />
   </ItemGroup>
-
+  
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="" />
   </ItemGroup>
