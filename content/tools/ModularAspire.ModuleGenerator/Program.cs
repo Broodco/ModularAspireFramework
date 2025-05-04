@@ -108,7 +108,7 @@ namespace ModularAspire.ModuleGenerator
                     StartInfo = new ProcessStartInfo
                     {
                         FileName = "dotnet",
-                        Arguments = $"sln \"{solutionFile}\" add \"{projectPath}\" --solution-folder \"src/Modules/{moduleName}\"",
+                        Arguments = $"sln \"{solutionFile}\" add \"{projectPath}\" --solution-folder \"Modules/{moduleName}\"",
                         RedirectStandardOutput = true,
                         UseShellExecute = false,
                         CreateNoWindow = true

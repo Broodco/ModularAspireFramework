@@ -4,15 +4,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.AppHost", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.ServiceDefaults", "src\ModularAspire.ServiceDefaults\ModularAspire.ServiceDefaults.csproj", "{CB94B79E-9B8F-4105-BB5B-864B6B06C4C4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "src\API", "{6B48A23E-48DB-42C6-A6F9-16CF66EBD3A5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{6B48A23E-48DB-42C6-A6F9-16CF66EBD3A5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tooling", "src\Tooling", "{A2F567D4-D595-4A10-B861-ACAF725112D7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tooling", "Tooling", "{A2F567D4-D595-4A10-B861-ACAF725112D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.MigrationService", "src\ModularAspire.MigrationService\ModularAspire.MigrationService.csproj", "{4F6245C4-FE8E-4B77-B015-56223F4DFD59}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "src\Common", "{E9D59C99-2F51-417D-A37A-4C8D20643798}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E9D59C99-2F51-417D-A37A-4C8D20643798}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "src\Modules", "{9AD637A2-51FF-48DB-8B4E-FFCED0ED17C4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9AD637A2-51FF-48DB-8B4E-FFCED0ED17C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Common.Application", "src\Common\ModularAspire.Common.Application\ModularAspire.Common.Application.csproj", "{30013DDF-4E96-41A7-8234-7522D4E4B2EC}"
 EndProject

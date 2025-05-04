@@ -17,11 +17,11 @@ public class ModuleNameDbContextFactory : IDesignTimeDbContextFactory<ModuleName
             .Build();
 
         // Retrieve the connection string
-        var connectionString = "Host=localhost;Port=5432;Database=shopconnect-db;Username=postgres;Password=password";
+        var connectionString = "Host=localhost;Port=5432;Database=modular-aspire-db;Username=postgres;Password=password";
 
         if (string.IsNullOrEmpty(connectionString))
         {
-            throw new InvalidOperationException("The connection string 'shopconnect-db' is missing in appsettings.json or environment variables.");
+            throw new InvalidOperationException("The connection string 'modular-aspire-db' is missing in appsettings.json or environment variables.");
         }
             
         var optionsBuilder = new DbContextOptionsBuilder<ModuleNameDbContext>();
