@@ -7,7 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Common\ModularAspire.Common.Application\ModularAspire.Common.Application.csproj" />
       <ProjectReference Include="..\ModularAspire.Modules.Identity.Domain\ModularAspire.Modules.Identity.Domain.csproj" />
+      <ProjectReference Include="..\ModularAspire.Modules.Identity.IntegrationEvents\ModularAspire.Modules.Identity.IntegrationEvents.csproj" />
     </ItemGroup>
 
     <ItemGroup>

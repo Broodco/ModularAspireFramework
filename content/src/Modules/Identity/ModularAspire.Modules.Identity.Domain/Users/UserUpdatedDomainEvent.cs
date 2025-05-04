@@ -2,9 +2,9 @@ using ModularAspire.Common.Domain;
 
 namespace ModularAspire.Modules.Identity.Domain.Users;
 
-public sealed class UserRegisteredDomainEvent : DomainEvent
+public sealed class UserUpdatedDomainEvent : DomainEvent
 {
-    public UserRegisteredDomainEvent(
+    public UserUpdatedDomainEvent(
         string userId)
     {
         UserId = userId;

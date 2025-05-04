@@ -21,18 +21,31 @@ public sealed class InsertOutboxMessagesInterceptor : SaveChangesInterceptor
 
     private static void InsertOutboxMessages(DbContext context)
     {
-        var outboxMessages = context
+        var entityOutboxMessages = context
             .ChangeTracker
             .Entries<Entity>()
             .Select(entry => entry.Entity)
             .SelectMany(entity =>
             {
                 IReadOnlyCollection<IDomainEvent> domainEvents = entity.DomainEvents;
-
                 entity.ClearDomainEvents();
-
                 return domainEvents;
-            })
+            });
+        
+        var hasDomainEventsOutboxMessages = context
+            .ChangeTracker
+            .Entries<IHasDomainEvents>()
+            .Select(entry => entry.Entity)
+            .Where(entity => !(entity is Entity))
+            .SelectMany(entity =>
+            {
+                IReadOnlyCollection<IDomainEvent> domainEvents = entity.DomainEvents;
+                entity.ClearDomainEvents();
+                return domainEvents;
+            });
+        
+        var allOutboxMessages = entityOutboxMessages
+            .Concat(hasDomainEventsOutboxMessages)
             .Select(domainEvent => new OutboxMessage
             {
                 Id = domainEvent.Id,
@@ -42,6 +55,6 @@ public sealed class InsertOutboxMessagesInterceptor : SaveChangesInterceptor
             })
             .ToList();
         
-        context.Set<OutboxMessage>().AddRange(outboxMessages);
+        context.Set<OutboxMessage>().AddRange(allOutboxMessages);
     }
 }

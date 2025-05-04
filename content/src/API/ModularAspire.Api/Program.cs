@@ -9,6 +9,7 @@ using ModularAspire.Common.Infrastructure;
 using ModularAspire.Common.Presentation.Endpoints;
 using ModularAspire.Modules.Identity.Domain.Users;
 using ModularAspire.Modules.Identity.Infrastructure;
+using ModularAspire.Modules.Identity.Infrastructure.Middleware;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -67,6 +68,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseIdentityDomainEvents();
 
 app.MapGroup("identity/")
     .MapIdentityApi<User>()

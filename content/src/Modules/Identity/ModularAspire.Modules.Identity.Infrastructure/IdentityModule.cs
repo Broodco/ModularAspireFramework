@@ -19,6 +19,7 @@ using ModularAspire.Modules.Identity.Infrastructure.Authorization;
 using ModularAspire.Modules.Identity.Infrastructure.Database;
 using ModularAspire.Modules.Identity.Infrastructure.Inbox;
 using ModularAspire.Modules.Identity.Infrastructure.Outbox;
+using ModularAspire.Modules.Identity.Infrastructure.Users;
 
 namespace ModularAspire.Modules.Identity.Infrastructure;
 
@@ -62,6 +63,8 @@ public static class IdentityModule
         services.AddScoped<IModuleAuthorizationService, IdentityAuthorizationService>();
         services.AddSingleton<IAuthorizationHandler, ResourcePermissionHandler>();
         services.AddHttpContextAccessor();
+
+        services.AddScoped<IUserRepository, UserRepository>();
         
         services.Configure<OutboxOptions>(configuration.GetSection("Identity:Outbox"));
         services.ConfigureOptions<ConfigureProcessOutboxJob>();
