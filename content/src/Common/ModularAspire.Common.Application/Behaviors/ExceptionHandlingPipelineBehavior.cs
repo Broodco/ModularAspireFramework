@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using ModularAspire.Common.Application.Exceptions;
+using ApplicationException = ModularAspire.Common.Application.Exceptions.ApplicationException;
 
 namespace ModularAspire.Common.Application.Behaviors;
 
@@ -18,7 +19,7 @@ internal sealed class ExceptionHandlingPipelineBehavior<TRequest, TResponse>(
         {
             logger.LogError(ex, "Unhandled exception for {RequestName}", typeof(TRequest).Name);
             
-            throw new ModularAspireException(typeof(TRequest).Name, inner: ex);
+            throw new ApplicationException(typeof(TRequest).Name, inner: ex);
         }
     }
 }
