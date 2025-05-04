@@ -38,7 +38,7 @@ namespace ModularAspire.ModuleGenerator
                 return;
             }
             
-            string templatePath = Path.Combine(rootDir, "src", "Templates", "ModuleTemplate");
+            string templatePath = Path.Combine(rootDir, "templates", "ModuleTemplate");
             string modulesPath = Path.Combine(rootDir, "src", "Modules");
             string newModulePath = Path.Combine(modulesPath, moduleName);
             
@@ -108,7 +108,7 @@ namespace ModularAspire.ModuleGenerator
                     StartInfo = new ProcessStartInfo
                     {
                         FileName = "dotnet",
-                        Arguments = $"sln \"{solutionFile}\" add \"{projectPath}\" --solution-folder \"Modules/{moduleName}\"",
+                        Arguments = $"sln \"{solutionFile}\" add \"{projectPath}\" --solution-folder \"src/Modules/{moduleName}\"",
                         RedirectStandardOutput = true,
                         UseShellExecute = false,
                         CreateNoWindow = true

@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Common\ModularAspire.Common.Infrastructure\ModularAspire.Common.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\..\Common\ModularAspire.Common.Infrastructure\ModularAspire.Common.Infrastructure.csproj" />
       <ProjectReference Include="..\ModularAspire.Modules.ModuleName.Application\ModularAspire.Modules.ModuleName.Application.csproj" />
       <ProjectReference Include="..\ModularAspire.Modules.ModuleName.Presentation\ModularAspire.Modules.ModuleName.Presentation.csproj" />
     </ItemGroup>

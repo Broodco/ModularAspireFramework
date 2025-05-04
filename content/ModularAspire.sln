@@ -1,54 +1,40 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.AppHost", "ModularAspire.AppHost\ModularAspire.AppHost.csproj", "{71DFB1AE-7742-4AD7-9ED0-309BF5280E8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.AppHost", "src\ModularAspire.AppHost\ModularAspire.AppHost.csproj", "{71DFB1AE-7742-4AD7-9ED0-309BF5280E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.ServiceDefaults", "ModularAspire.ServiceDefaults\ModularAspire.ServiceDefaults.csproj", "{CB94B79E-9B8F-4105-BB5B-864B6B06C4C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.ServiceDefaults", "src\ModularAspire.ServiceDefaults\ModularAspire.ServiceDefaults.csproj", "{CB94B79E-9B8F-4105-BB5B-864B6B06C4C4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{6B48A23E-48DB-42C6-A6F9-16CF66EBD3A5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "src\API", "{6B48A23E-48DB-42C6-A6F9-16CF66EBD3A5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tooling", "Tooling", "{A2F567D4-D595-4A10-B861-ACAF725112D7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tooling", "src\Tooling", "{A2F567D4-D595-4A10-B861-ACAF725112D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.MigrationService", "ModularAspire.MigrationService\ModularAspire.MigrationService.csproj", "{4F6245C4-FE8E-4B77-B015-56223F4DFD59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.MigrationService", "src\ModularAspire.MigrationService\ModularAspire.MigrationService.csproj", "{4F6245C4-FE8E-4B77-B015-56223F4DFD59}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E9D59C99-2F51-417D-A37A-4C8D20643798}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "src\Common", "{E9D59C99-2F51-417D-A37A-4C8D20643798}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9AD637A2-51FF-48DB-8B4E-FFCED0ED17C4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "src\Modules", "{9AD637A2-51FF-48DB-8B4E-FFCED0ED17C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Common.Application", "Common\ModularAspire.Common.Application\ModularAspire.Common.Application.csproj", "{30013DDF-4E96-41A7-8234-7522D4E4B2EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Common.Application", "src\Common\ModularAspire.Common.Application\ModularAspire.Common.Application.csproj", "{30013DDF-4E96-41A7-8234-7522D4E4B2EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Common.Domain", "Common\ModularAspire.Common.Domain\ModularAspire.Common.Domain.csproj", "{64CAF07A-ED0D-4AFF-BBA1-F864987B1F46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Common.Domain", "src\Common\ModularAspire.Common.Domain\ModularAspire.Common.Domain.csproj", "{64CAF07A-ED0D-4AFF-BBA1-F864987B1F46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Common.Infrastructure", "Common\ModularAspire.Common.Infrastructure\ModularAspire.Common.Infrastructure.csproj", "{08A7C757-7481-4A13-932B-1B56961A0EEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Common.Infrastructure", "src\Common\ModularAspire.Common.Infrastructure\ModularAspire.Common.Infrastructure.csproj", "{08A7C757-7481-4A13-932B-1B56961A0EEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Common.Presentation", "Common\ModularAspire.Common.Presentation\ModularAspire.Common.Presentation.csproj", "{D5782E32-29D1-4EFD-B783-9DEA10A066A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Common.Presentation", "src\Common\ModularAspire.Common.Presentation\ModularAspire.Common.Presentation.csproj", "{D5782E32-29D1-4EFD-B783-9DEA10A066A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Api", "API\ModularAspire.Api\ModularAspire.Api.csproj", "{9EB36D62-5374-49C0-89FD-2D759C7943EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Api", "src\API\ModularAspire.Api\ModularAspire.Api.csproj", "{9EB36D62-5374-49C0-89FD-2D759C7943EB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{324C7A40-AD11-476C-9EEA-C7F152886615}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "src\Identity", "{324C7A40-AD11-476C-9EEA-C7F152886615}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.Application", "Modules\Identity\ModularAspire.Modules.Identity.Application\ModularAspire.Modules.Identity.Application.csproj", "{C9A0372E-2BAA-45E1-993B-0BFCA97D607E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.Application", "src\Modules\Identity\ModularAspire.Modules.Identity.Application\ModularAspire.Modules.Identity.Application.csproj", "{C9A0372E-2BAA-45E1-993B-0BFCA97D607E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.Domain", "Modules\Identity\ModularAspire.Modules.Identity.Domain\ModularAspire.Modules.Identity.Domain.csproj", "{15DE3EE9-4CFE-487E-8675-630F264472BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.Domain", "src\Modules\Identity\ModularAspire.Modules.Identity.Domain\ModularAspire.Modules.Identity.Domain.csproj", "{15DE3EE9-4CFE-487E-8675-630F264472BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.Infrastructure", "Modules\Identity\ModularAspire.Modules.Identity.Infrastructure\ModularAspire.Modules.Identity.Infrastructure.csproj", "{25A086D1-EA6E-4B2D-B4D2-CEA9E60C710F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.Infrastructure", "src\Modules\Identity\ModularAspire.Modules.Identity.Infrastructure\ModularAspire.Modules.Identity.Infrastructure.csproj", "{25A086D1-EA6E-4B2D-B4D2-CEA9E60C710F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.Presentation", "Modules\Identity\ModularAspire.Modules.Identity.Presentation\ModularAspire.Modules.Identity.Presentation.csproj", "{CECE36BB-C34C-43AF-BE39-42B86A423A3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.Presentation", "src\Modules\Identity\ModularAspire.Modules.Identity.Presentation\ModularAspire.Modules.Identity.Presentation.csproj", "{CECE36BB-C34C-43AF-BE39-42B86A423A3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.IntegrationEvents", "Modules\Identity\ModularAspire.Modules.Identity.IntegrationEvents\ModularAspire.Modules.Identity.IntegrationEvents.csproj", "{3E70233A-7F87-4E27-A2B1-3881DBD5B357}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.ModuleGenerator", "ModularAspire.ModuleGenerator\ModularAspire.ModuleGenerator.csproj", "{19E88397-B74B-47FA-9696-DEAF421592F3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModuleTemplate", "ModuleTemplate", "{504B346F-6A03-45FD-9315-492A108ADF48}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.ModuleName.Domain", "ModuleTemplate\ModularAspire.Modules.ModuleName.Domain\ModularAspire.Modules.ModuleName.Domain.csproj", "{88CECDE4-4428-4CC3-BCC6-86D38FCF7EDF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.ModuleName.Application", "ModuleTemplate\ModularAspire.Modules.ModuleName.Application\ModularAspire.Modules.ModuleName.Application.csproj", "{BBAEA5CC-A8EC-45FD-AC98-0B6A71337460}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.ModuleName.Infrastructure", "ModuleTemplate\ModularAspire.Modules.ModuleName.Infrastructure\ModularAspire.Modules.ModuleName.Infrastructure.csproj", "{688365F6-D4E1-4212-9940-1C70BF346351}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.ModuleName.IntegrationEvents", "ModuleTemplate\ModularAspire.Modules.ModuleName.IntegrationEvents\ModularAspire.Modules.ModuleName.IntegrationEvents.csproj", "{71E8C42E-EC9F-4B5E-9DDD-0EFC26D8C14D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.ModuleName.Presentation", "ModuleTemplate\ModularAspire.Modules.ModuleName.Presentation\ModularAspire.Modules.ModuleName.Presentation.csproj", "{D2853F5E-590E-4666-B486-5C015AB51CDA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularAspire.Modules.Identity.IntegrationEvents", "src\Modules\Identity\ModularAspire.Modules.Identity.IntegrationEvents\ModularAspire.Modules.Identity.IntegrationEvents.csproj", "{3E70233A-7F87-4E27-A2B1-3881DBD5B357}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
