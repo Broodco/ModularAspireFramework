@@ -6,6 +6,7 @@ using ModularAspire.Common.Domain;
 using ModularAspire.Modules.Identity.Application.Users.GetUser;
 using ModularAspire.Modules.Identity.Domain.Users;
 using ModularAspire.Modules.Identity.IntegrationEvents;
+using ApplicationException = ModularAspire.Common.Application.Exceptions.ApplicationException;
 
 namespace ModularAspire.Modules.Identity.Application.Users;
 
@@ -17,7 +18,7 @@ internal sealed class UserUpdatedDomainEventHandler(ISender sender, IEventBus ev
         Result<User?> result = await sender.Send(new GetUserQuery(domainEvent.UserId), cancellationToken);
         
         if (result.IsFailure)
-            throw new ModularAspireException(nameof(GetUserQuery), result.Error);
+            throw new ApplicationException(nameof(GetUserQuery), result.Error);
 
         await eventBus.PublishAsync(
             new UserUpdatedIntegrationEvent(

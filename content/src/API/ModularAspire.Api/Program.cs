@@ -54,7 +54,7 @@ builder.Services.AddInfrastructure(
 
 builder.Configuration.AddModuleConfiguration(["identity"]);
 
-builder.Services.AddIdentityModule(builder.Configuration, builder.Configuration.GetConnectionString("shopconnect-db")!);
+builder.Services.AddIdentityModule(builder.Configuration, builder.Configuration.GetConnectionString("modular-aspire-db")!);
 
 builder.EnrichDatabaseContexts();
 

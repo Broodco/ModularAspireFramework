@@ -2,11 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
-namespace ModularAspire.Modules.Identity.Infrastructure.Database;
+namespace ModularAspire.Modules.ModuleName.Infrastructure.Database;
 
-public class IdentityDbContextFactory : IDesignTimeDbContextFactory<IdentityDbContext>
+public class ModuleNameDbContextFactory : IDesignTimeDbContextFactory<ModuleNameDbContext>
 {
-    public IdentityDbContext CreateDbContext(string[] args)
+    public ModuleNameDbContext CreateDbContext(string[] args)
     {
         // Locate configuration file for startup
         var basePath = Directory.GetCurrentDirectory();
@@ -21,12 +21,12 @@ public class IdentityDbContextFactory : IDesignTimeDbContextFactory<IdentityDbCo
 
         if (string.IsNullOrEmpty(connectionString))
         {
-            throw new InvalidOperationException("The connection string 'modular-aspire -db' is missing in appsettings.json or environment variables.");
+            throw new InvalidOperationException("The connection string 'modular-aspire-db' is missing in appsettings.json or environment variables.");
         }
             
-        var optionsBuilder = new DbContextOptionsBuilder<IdentityDbContext>();
+        var optionsBuilder = new DbContextOptionsBuilder<ModuleNameDbContext>();
         optionsBuilder.UseNpgsql(connectionString); // Use Npgsql for PostgreSQL
 
-        return new IdentityDbContext(optionsBuilder.Options);
+        return new ModuleNameDbContext(optionsBuilder.Options);
     }
 }

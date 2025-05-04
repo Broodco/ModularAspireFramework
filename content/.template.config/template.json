@@ -16,6 +16,83 @@
       "type": "parameter",
       "replaces": "YourCompany",
       "defaultValue": "YourCompany"
+    },
+    "containerPrefix": {
+      "type": "parameter",
+      "replaces": "modular-aspire",
+      "defaultValue": "modular-aspire"
     }
-  }
+  },
+  "postActions": [
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "description": "Rename script template to PowerShell script",
+      "manualInstructions": [
+        {
+          "text": "Rename src/scripts/new-module.ps1.template to src/scripts/new-module.ps1"
+        }
+      ],
+      "args": {
+        "executable": "powershell",
+        "args": "-NonInteractive -Command \"Rename-Item -Path 'scripts/new-module.ps1.template' -NewName 'new-module.ps1'\""
+      },
+      "continueOnError": true
+    },
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "description": "Fix AppHost project references",
+      "manualInstructions": [
+        {
+          "text": "Replace dots with underscores in Projects references in AppHost/Program.cs"
+        }
+      ],
+      "args": {
+        "executable": "powershell",
+        "args": "-NonInteractive -Command \"$appHostFile = Get-ChildItem -Path 'src' -Recurse -Filter 'Program.cs' | Where-Object { $_.DirectoryName -match 'AppHost' } | Select-Object -First 1; if ($appHostFile) { $content = Get-Content -Path $appHostFile.FullName -Raw; $pattern = 'Projects\\.([^_\\s]+)\\.([^_\\s]+)'; $replacement = 'Projects.$1_$2'; $content = $content -replace $pattern, $replacement; Set-Content -Path $appHostFile.FullName -Value $content; Write-Host 'AppHost project references fixed successfully.' }\""
+      },
+      "continueOnError": true
+    },
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "description": "Fix container prefixes",
+      "manualInstructions": [
+        {
+          "text": "Replace container prefixes in AppHost/Program.cs"
+        }
+      ],
+      "args": {
+        "executable": "powershell",
+        "args": "-NonInteractive -Command \"$appHostFile = Get-ChildItem -Path 'src' -Recurse -Filter 'Program.cs' | Where-Object { $_.DirectoryName -match 'AppHost' } | Select-Object -First 1; if ($appHostFile) { $content = Get-Content -Path $appHostFile.FullName -Raw; $solutionFileName = Get-ChildItem -Path '.' -Filter '*.sln' | Select-Object -First 1; $projectNameBase = $solutionFileName.BaseName; $projectNameLower = $projectNameBase.ToLowerInvariant().Replace('.', '-'); Write-Host 'Replacing modular-aspire with '$projectNameLower; $content = $content -replace 'modular-aspire', $projectNameLower; Set-Content -Path $appHostFile.FullName -Value $content; Write-Host 'Container prefixes updated successfully to '$projectNameLower }\""
+      },
+      "continueOnError": true
+    },
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "description": "Fix MigrationService database name",
+      "manualInstructions": [
+        {
+          "text": "Replace database name in MigrationService/Program.cs"
+        }
+      ],
+      "args": {
+        "executable": "powershell",
+        "args": "-NonInteractive -Command \"$migrationServiceFile = Get-ChildItem -Path 'src' -Recurse -Filter 'Program.cs' | Where-Object { $_.DirectoryName -match 'MigrationService' } | Select-Object -First 1; if ($migrationServiceFile) { $content = Get-Content -Path $migrationServiceFile.FullName -Raw; $solutionFileName = Get-ChildItem -Path '.' -Filter '*.sln' | Select-Object -First 1; $projectNameBase = $solutionFileName.BaseName; $projectNameLower = $projectNameBase.ToLowerInvariant().Replace('.', '-'); Write-Host 'Replacing modular-aspire-db with '$projectNameLower'-db'; $content = $content -replace 'modular-aspire-db', ($projectNameLower + '-db'); Set-Content -Path $migrationServiceFile.FullName -Value $content; Write-Host 'MigrationService database name updated successfully to '$projectNameLower'-db' }\""
+      },
+      "continueOnError": true
+    },
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "description": "Fix API database connection strings",
+      "manualInstructions": [
+        {
+          "text": "Replace database connection strings in API/Program.cs"
+        }
+      ],
+      "args": {
+        "executable": "powershell",
+        "args": "-Command \"$apiFile = Get-ChildItem -Path 'src' -Recurse -Filter 'Program.cs' | Where-Object { $_.DirectoryName -match 'Api' } | Select-Object -First 1; if ($apiFile) { $content = Get-Content -Path $apiFile.FullName -Raw; $solutionFileName = Get-ChildItem -Path '.' -Filter '*.sln' | Select-Object -First 1; $projectNameBase = $solutionFileName.BaseName; $projectNameLower = $projectNameBase.ToLowerInvariant().Replace('.', '-'); Write-Host 'Replacing modular-aspire with '$projectNameLower' in API Program.cs'; $content = $content -replace 'modular-aspire', $projectNameLower; Set-Content -Path $apiFile.FullName -Value $content; Write-Host 'API database connection strings updated successfully to '$projectNameLower }\""
+      },
+      "continueOnError": true
+    }
+  ]
 }
